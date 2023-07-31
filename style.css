@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+body{
+    margin: 10px 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #202629;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    gap: 10px;
+    align-items: center;
+}
+.tasklist{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 25px;
+}
+.task{
+    border: 1px white solid;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+}
+.task h3{
+    margin-top: 0;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.task .dateI {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.5em;
+    color: gray;
+}
+.task form{
+    position: absolute;
+    bottom: 30px;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+.task .dateL {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.task .dateL::before{
+    content: "Date Limit";
+    font-size: 1em;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: -1.5em;
+    left: 0;
+}
+.task .dateL::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.desc {
+    position: relative;
+}
+.task .desc::before{
+    content: "Description";
+    font-size: 1em;
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: -1.5em;
+    left: 0;
+    text-align: center;
+}
+.task .desc::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
